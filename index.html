@@ -2,6 +2,11 @@
 
 <html>
 <head>
+<style>
+body {
+  background-image: href = "images/pexels-pixabay-36006.jpg";
+}
+</style>
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N00QZD1X5G"></script> 
 <script>
@@ -15,6 +20,7 @@
 <link rel = "shortcut icon" type = "image/x-icon" href = "images/favicon.io">
 </head>
 <body>
+
 <header>
   <nav>
     <ul>
@@ -23,37 +29,39 @@
   </nav>
 </header>
 <section>
-  <div>
-	  <br>
-    <h2>A new way to view history </h2>
-	  <p><br></p>
-    <h4>Reconstruct an unbiased history through primary sources</h4>
-	  <p><br></p>
-    <p>ImpartialHistory is still currently under development</p>
-	  <p> <br> </p>
-	  <div class="alert alert-success" role="alert" id="succ">
+<div class = "container">
+	<img src = "images/pexels-photo-4388164.jpeg">
+  <div class="centered"><h1>A New Way to View History</h1></div>
+	<div class="centered2"><h2>━━━━Reconstruct an unbiased history through primary sources━━━━</h2></div>
+	<hr>
+	<p><br></p>
+	<div class="centered3"><h3>Impartial History is still currently under development</h3>
+	<hgroup>
+    <div class = "centered4"><h2>Enter your email here to receive updates from the team:</h2></div>
+</hgroup>
+  <div class = "centered5"><form id= "emailForm">
+    <div class="group">
+        <input type="email" name="email_add"><span class="highlight"></span><span class="bar"></span>
+         
+    </div>
+  <button value="submit" type="button" class="button buttonBlue" value= "submit_button" id="sub" onclick="saveToFirebase()">Subscribe
+  </button>
+  </form>
+	</div>
+	</div>
+	
+  </div>
+<div class="alert alert-success" role="alert" id="succ">
     <p id="txt">
      <strong>Success!</strong> You have been signed up successfully!
-    </p>
-  </div>
+	</p>
 <div class="alert " role="alert" id="fail">
     <p id="txt">
         <strong>Sorry!</strong> You have entered an invalid E-mail.
     </p>
 </div>
-<hgroup>
-    <h1>Enter your email here to receive updates from the team:</h1>
-</hgroup>
-  <form id= "emailForm">
-    <div class="group">
-        <input type="email" name="email_add"><span class="highlight"></span><span class="bar"></span>
-          <label>Email</label>
-    </div>
-  <button value="submit" type="button" class="button buttonBlue" value= "submit_button" id="sub" onclick="saveToFirebase()">Subscribe
-  </button>
-  </form>
-    <p><br><br></p>
-  </div>
+
+	
 </section>
 <footer>Follow us on social media: @impartial_history</footer>
 <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
